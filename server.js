@@ -66,7 +66,7 @@ app.put('/api/placement_logs/:id', async (req, res) => {
 
 
 // DELETE api endpoint
-app.delete(`/api/deleteLog/${id}`, async (req, res) => {
+app.delete('/api/deleteLog/:id', async (req, res) => {
   const { id } = req.params;
   try {
     const statement = await db.prepare('DELETE FROM placement_log WHERE id = ?');
