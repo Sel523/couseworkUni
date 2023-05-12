@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placement Log</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button id="loadDateSelectionButton" onclick="showTemplate()">Load Date Selection</button>
+  <button id="printAllLogsButton" onclick="printLogs()">Print all logs</button>
+
+  <div id="dateContainer"></div>
+  <div id="logsContainer"></div>
+
+  <template id="dateTemplate">
+    <div>
+      <button id="prevMonthButton" onclick="changeMonth(-1)">Previous</button>
+      <span id="monthDisplay"></span>
+      <button id="nextMonthButton" onclick="changeMonth(1)">Next</button>
+    </div>
+    <input type="number" id="dayInput" min="1" max="31" placeholder="Enter day">
+    <textarea id="placementText" placeholder="Write about your placement"></textarea>
+    <textarea id="skillsText" placeholder="what skills did you learn"></textarea>
+    <button id="submitDateButton" onclick="submitDate()">Submit</button>
+    <button id="removeLogButton" onclick="removeTemplate()">Remove log</button>
+  </template>
+
+  <script defer src="index.js"></script>
+</body>
+</html>

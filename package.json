@@ -1,0 +1,22 @@
+{
+  "name": "web-prog_coursework",
+  "version": "1.0.0",
+  "description": "web-based Engineering log",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "UOP",
+    "coursework",
+    "javascript"
+  ],
+  "author": "UP2067631",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite": "^4.2.0",
+    "sqlite3": "^5.1.6"
+  }
+}
